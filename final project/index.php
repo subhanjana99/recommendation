@@ -198,18 +198,19 @@
               <div class="row">
                 <div class="col-4 col-sm-4">
                   <div class="box1">
-                    <a href="#"><i class="fas fa-map-marker-alt fa-10x ico"></i></a><br><br>
+                    <a href="map.html"><i class="fas fa-map-marker-alt fa-10x ico"></i></a><br><br>
                   <p class="cap">Find Best Route</p></div>
                 </div>
                 <div class="col-4 col-sm-4">
                   <div class="box1">
-                    <i class="fas fa-hands-helping fa-10x ico"></i><br><br>
-                    <p class="cap">Decide your choice</p></div>
+                  <a href="add_place.php"><i class="fas fa-hands-helping fa-10x ico"></i></a><br><br>
+                    <p class="cap">Share Your Experience</p></div>
                 </div>
                 <div class="col-4 col-sm-4">
                   <div class="box1">
-                    <i class="far fa-comments fa-10x ico"></i><br><br>
-                    <p class="cap">Chatbox</p></div>
+                  <a href="SearchPlace.php"><i class="fas fa-search fa-10x ico"></i></a>
+<br><br>
+                    <p class="cap">Search Required Place </p></div>
                 </div>
               </div>
           </div>
