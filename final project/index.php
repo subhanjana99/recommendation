@@ -50,7 +50,7 @@
                        
                     </ul>
                 </nav>
-               <a href="view.php"<i class="fas fa-ellipsis-v" style="color: white; cursor: pointer; padding-right: 10px;"></i></a> 
+               <a href="admin.php"<i class="fas fa-ellipsis-v" style="color: white; cursor: pointer; padding-right: 10px;"></i></a> 
                 
             </div>
             <h1 class="titile"   style="text-align: center; color: white; padding-bottom: 11px;"> DISCOVER YOUR IDEAL HOLIDAY </h1>

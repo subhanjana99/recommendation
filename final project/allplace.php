@@ -12,7 +12,7 @@
 	<script src="js/popper.min.js"></script>
 
 	<style>
-    .box{margin-top: 10px;border: 2px solid green;margin-left: 300px;position: relative;top:10px;color: wheat;background-color: whitesmoke;
+    .box{margin-top: 10px;border: 2px solid green;margin-left: 40px;position: relative;top:10px;color: wheat;background-color: whitesmoke;
     border-radius: 10px;box-shadow: 0 0 4px 2px navy;}
     .box2{background-image: url("image/brown.jpg");position: absolute;background-color: #686de0;}
     .box1{color: brown;border-width: 3px;}
@@ -33,8 +33,8 @@
     </style>
 </head>
 <body class="box2">
-    <p class="p3">Customer Details</p>
-<a href="count.php" class="btn btn-primary btn-lg b31"><i class="fas fa-info-circle"></i> Search Customer</a>
+    <p class="p3">Place Details</p>
+<!-- <a href="count.php" class="btn btn-primary btn-lg b31"><i class="fas fa-info-circle"></i> Search Customer</a> -->
 
 <div class="box">
 <table border="2">
@@ -45,6 +45,8 @@
 <th style=padding:10px;text-align:center>District</th>
 
 <th style=padding:10px;text-align:center>Description</th>
+<th style=padding:10px;text-align:center>Image</th>
+
 <
 </tr>
 
@@ -62,13 +64,24 @@ if($total!=0)
 {
     
     while($result=mysqli_fetch_assoc($data))
-    {
+{
 echo "
 <tr >
-<td style=padding:10px;text-align:center>".$result['Place_name']."</td>
+<td style=padding:10px;text-align:center>".$result['id']."</td>
+
+<td style=padding:10px;text-align:center>".$result['place_name']."</td>
 <td style=padding:10px>".$result['division']."</td>
-<td style=padding:10px>".$result['Description']."</td>
-<td style=padding:10px>".$result['email']."</td>
+<td style=padding:10px>".$result['description']."</td>
+<td style=padding:10px>".$result['image']."</td>
+
+
+<td><a href='delete.php?id=$result[id] 'class=delete>Delete</a></td>
+
+
+
+
+
+
 </tr>";
 
     }
@@ -79,15 +92,9 @@ else{
 ?>
 
 </table></div>
+<br><br>
 
-<a href="room.php" class="btn btn-primary btn-sm b1">Reserve Room</a>
-<a href="payment.php" class="btn btn-primary btn-sm b3">Details Search</a>
-
-<a href="join.php" class="btn btn-primary btn-sm bi">View Room</a>
-<a href="aggregate.php" class="btn btn-primary btn-sm b2">Total room reserved</a>
-<a href="roomdetails.php" class="btn btn-primary btn-sm b2">Update room</a>
-
-<a href="logout.php" class="btn btn-primary btn-sm b3"><i class="fa fa-home"></i>Admin Logout</a>
+<a href="logout.php"><div class="btn btn-success ml-5">Logout</div></a>
 
 <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/popper.min.js"></script>
